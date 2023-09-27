@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  padding: 1rem;
+}
+
+.title {
+  text-align: center;
+}
+
+.card h2 {
+  width: fit-content;
+  padding: 2px;
+  margin-left: auto;
+  margin-bottom: 2px;
+}
+.card-1 {
+  background-color: rgb(189, 119, 119);
+  
+}
+.card-2 {
+  background-color: rgb(218, 41, 41);
+}
+.card-3 {
+  background-color: rgb(237, 237, 41);
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  border: solid 1px;
+  margin: 5px;
+  flex: 1 1 100%;
+  background-color: gray;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .card {
+    flex-basis: 35%;
+  }
+}
+@media (min-width: 992px) {
+  .card {
+    flex: 1 1 30%;
+  }
+}
